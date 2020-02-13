@@ -1,12 +1,9 @@
-import { TempComponent } from './temp/temp.component';
-import { RentalComponent } from './rental/rental.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', component: RentalComponent },
-  { path: 'temp', component: TempComponent }
+  { path: '', redirectTo: '/rentals', pathMatch: 'full' }
 ];
 
 @NgModule({
